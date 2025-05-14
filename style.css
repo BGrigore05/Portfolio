@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #2E2E2E;
+    font-family: "Jura", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    margin-top: -50px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-shadow 0.5s ;
+}
+header a:hover {
+    text-shadow: 0 0 20px white;
+}
+.list {
+    display: flex;
+    text-align: center;
+    padding-left: 650px;
+    gap:30px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.underHome, 
+.underAbout,
+.underSkills {
+    transition: box-shadow 0.8s ease;
+    transition: height 0.8s ease;
+}
+.underHome{
+    height: 1.4px;
+    width: 80px;
+    margin-left: 684px;
+    margin-top: -15px;
+    background-color: #FFFFFF;
+    transition: box-shadow 0.8s;
+}
+.underAbout {
+    height: 1.4px;
+    width: 80px;
+    margin-left: 816px;
+    margin-top: -1.4px;
+    background-color: #FFFFFF;
+}
+.underSkills{
+    height: 1.4px;
+    width: 80px;
+    margin-left: 950px;
+    margin-top: -2px;
+    background-color: #FFFFFF;
+}
+.info {
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+    padding-top: 100px;
+    height:400px ;
+    padding-top: 200px;
+}
+.info h1{
+    font-size: 70px;
+    color: #E98736;
+    margin-left: 100px;
+}
+.info h2 {
+    font-size: 40px;
+    margin-left: 106px;
+    margin-top: -50px;
+}
+.info h4 {
+    margin-left: 106px;
+    margin-top:-20px;
+}
+.infoPhoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 500px;
+    margin-top: -500px;
+}
+.circle {
+    width: 320px;
+    height: 320px;
+    margin-top: -315px;
+    margin-left: 490px;
+    background-color: #E98736;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px #E98736;
+}
+.sectionAbout{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 800px;
+}
+.infoAbout{
+    height: 500px;
+    width:1500px;
+    background-color: #373737;
+    border-radius: 15px;
+    justify-self: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.bio img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;  
+}
+.bio {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.bioInfo {
+    flex-direction: column;
+    width: 60%;
+    margin-left: 100px;
+    font-size: 25px;
+}
+.infoAbout h1 {
+    padding-top: 40px;
+    font-size: 50px;
+    margin-left: 60px;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Сдвиг снизу */
+    pointer-events: none;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Когда блок будет показан */
+  .show {
+    opacity: 1;
+    transform: translateY(0); /* Сдвигаем в нормальное положение */
+    pointer-events: auto;
+  }
+  .listSkills {
+    display: flex;
+    gap: 30px;
+  }
+  .html {
+    flex-direction: row;
+    background-color: rgb (30, 30, 30);
+    color: white;
+    border: 2px solid orange;
+    font-size: 10px;
+    width: 750px;
+    height: 180px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 0 10px orange;
+  }
+  .html h1 {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top:10px;
+  }
+  .html p{
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: -170px;
+  }
+  .html img {
+    width: 150px;
+    height: 150px;
+    margin-top: 18px;
+  }
+  .css {
+    flex-direction: row;
+    background-color: rgb (30, 30, 30);
+    color: white;
+    border: 2px solid orange;
+    font-size: 10px;
+    width: 750px;
+    height: 180px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 0 10px orange;
+  }
+  .css h1 {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top:10px;
+  }
+  .css p {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: -170px;
+  }
+  .css img {
+    width: 150px;
+    height: 150px;
+    margin-top: 18px;
+  }
+  .js{
+    flex-direction: row;
+    background-color: rgb (30, 30, 30);
+    color: white;
+    border: 2px solid orange;
+    font-size: 10px;
+    width: 750px;
+    height: 180px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 0 10px orange;
+  }
+  .js h1{
+    display: flex;
+    white-space:nowrap;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top:10px;
+  }
+  .js p{
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: -270px;
+  }
+  .js img {
+    width: 150px;
+    height: 150px;
+    margin-top: 18px;
+  }
+  .sectionSkills{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 400px;
+}
+.end {
+    height: 300px;
+}
